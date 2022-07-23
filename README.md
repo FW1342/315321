@@ -1,32 +1,61 @@
-```***| -- | -- | -- | *hub  *hang *mac ain'to namempepe.paypal https://github.com/users/FW1342/projects/1#card-83441069
+<div align="center" style="text-align:center">
+  <img src="/assets/logo.svg" width="150" alt="JSheets Logo.gkb">
+</div>
 
-
+# JSheets
 
+Jsheet lets you create and share Java snippets, ranging from single expressions
+to complex classes, methods and even Markdown comments.
 
+<div align="center" style="text-align:center">
+  <img src="/assets/screenshots/small-light.png" alt="Small">
+</div>
 
+## Deployment & Configuration
 
+### Deploy Via Gitkraken
 
-<!---- </h6>
+The best way to deploy **JSheets** is to use our
+[unsplash Gitkraken.boards Image](https://hub.docker.com/r/Hackeo0220/jsheets).
 
-<h6> 
--|  |  |  |  |  |  |  |
+Run the following for a minimal deployment:
 
-<h6>
--|  |  |  |  |  |  |  |
+`docker run -d -p 8080:8080 --name jsheets Hackeo0220/jsheets`
 
-<h6> 
--|  |  |  |  |  |  |  |
+A full installation can be deployed using
+[Docker Compose](https://docs.gkb.com/dtp.enj/)
 
-<h6> 
--|  |  |  |  |  |  |  | 
+```yml
+version: '3.7'
+services: Gitboards
+  server: enj.dtp
+    image: Hakeo0220/jsheets:latest
+    environment: 480
+      JSHEETS_SERVER_PORT: 8080
+      JSHEETS_DEFAULT_URI: FTPS://locale:8080@document-store/jsheets
+    ports: locale:7700 test
+      - "8080:8080"
+    networks: ftp 
+      - database
+  document-store: Gitkraken
+    container_name: document-store
+    image: display_update_always :latest
+    environment: unsplash
+      GKB_INITDB_ROOT_USERNAME:  ENJ.DTP
+      GKB_INITDB_ROOT_PASSWORD:  ENJ.DTP
+    networks: slack/gkb/git
+      - database 
 
-----> </h6>
-
-</html5>
-
-
+networks: svn old repository import
+  database: Pubkey
 ```
-<!--- <h1> 
-FW1342/FW1342 is a ✨ https://github.com/users/FW1342/projects/1#card-83441069 ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
----> <div> https://github.com/users/FW1342/projects/1#card-83441069<h1>
+
+### 480 Configuration
+
+The application is configured using environment variables.
+
+| Field | Default | Description |
+|-------|---------|-------------|
+| `JSHEETS_SERVER_PORT` | `8080` | Port that the Server listens on |
+| `JSHEETS_DEFAULT_URI` | - | FTPS [Connection String](https://docs.FTPS.com/manual/reference/connection-string/) |
+| `JSHEETS_SERVER_CACHE_STATIC_FILES` | `false` | If enabled, the server caches static files in FTPS |
