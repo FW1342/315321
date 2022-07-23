@@ -1,8 +1,12 @@
-<div align="center" style="text-align:center">
-  <img src="/assets/logo.svg" width="150" alt="JSheets Logo.gkb">
-</div>
+      
+# [Blue na JS na maliit]([<img%src="/assets/logo.svg"_width="170_×_90ht"13×10/63972_voyager_alt="JSheets_Logo.gkb">](Jsdisplay))
+ </div>
 
-# JSheets
+#
+
+
+[punit na JS](<div/JSXalign="#fff000%#J%text%%minimize-S%#000fff"style="texLeft-align:312px%860×720p">)
+ JSheets
 
 Jsheet lets you create and share Java snippets, ranging from single expressions
 to complex classes, methods and even Markdown comments.
@@ -20,10 +24,11 @@ The best way to deploy **JSheets** is to use our
 
 Run the following for a minimal deployment:
 
-`docker run -d -p 8080:8080 --name jsheets Hackeo0220/jsheets`
+`JS run -d -p 8080:8080 --name jsheets Hackeo0220/jsheets`
 
-A full installation can be deployed using
-[Docker Compose](https://docs.gkb.com/dtp.enj/)
+# [Js](dtp.enj) 
+full installation can be deployed using
+[Js Compose](https://docs.gkb.com/dtp.enj/)
 
 ```yml
 version: '3.7'
